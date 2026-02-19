@@ -11,22 +11,38 @@
     </head>
     <body>
         <header class="header">
-            <a href="/">
-                <img src="assets/hh.svg" />
-            </a>
-            <div class="header__buttons">
-                <button class="header__button header__button_search" aria-label="Поиск">
+            <div class="header__container container">
+                <div class="header__left">
+                    <a href="/">
+                        <img src="assets/hh.svg" />
+                    </a>
+                    <nav class="header__nav">
+                        <a href="/" class="header__nav-link">Одежда</a>
+                        <a href="/" class="header__nav-link">Сумки</a>
+                        <a href="/" class="header__nav-link">Аксессуары</a>
+                        <a href="/" class="header__nav-link">Офисные принадлежности</a>
+                    </nav>
+                </div>
+                <div class="header__right">
+                    <button class="header__button header__button_search" aria-label="Поиск"></button>
+                    <button class="header__sign-in">
+                        Войти
+                    </button>
+                </div>
+                <div class="header__buttons">
+                    <button class="header__button header__button_search" aria-label="Поиск">
 
-                </button>
-                <button class="header__button header__button_profile" aria-label="Профиль">
+                    </button>
+                    <button class="header__button header__button_profile" aria-label="Профиль">
 
-                </button>
-                <button class="header__button header__button_menu" aria-label="Меню">
+                    </button>
+                    <button class="header__button header__button_menu" aria-label="Меню">
 
-                </button>
+                    </button>
+                </div>
             </div>
         </header>
-        <main class="content">
+        <main class="content container">
             <section class="catalog">
                 <h2>Популярные товары</h2>
                 <div class="cards">
@@ -54,6 +70,17 @@
                             390 ₽
                         </div>
                     </div>
+                    <div class="card">
+                        <img class="card__img" src="./images/product-1.jpg" alt="Зонт" />
+                        <h4 class="card__title">Зонт</h4>
+                        <div class="card__price">1 990 ₽</div>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="./images/product-2.jpg" alt="Зонт" />
+                        <h4 class="card__title">Зонт</h4>
+                        <div class="card__price">1 990 ₽</div>
+                    </div>
+
                 </div>
             </section>
         </main>

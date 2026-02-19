@@ -1,3 +1,5 @@
+@screen-tablet: ~'(min-width: 768px)';
+
 @font-face {
     font-family: "Novelist";
     src: url(../fonts/Novelist.otf);
@@ -35,6 +37,15 @@ h4 {
     line-height: 19px;
     margin-bottom: 4px;
     font-weight: 700;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 930px) {
+        box-sizing: content-box;
+    }
 }
 
 .content {
